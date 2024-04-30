@@ -4,15 +4,14 @@ import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
-import Header from "../layout/Header";
 import Button from "../components/Common/Button";
-
 import Loader from "../components/Common/Loader";
+import Header from "../layout/Header";
 
 function Profile() {
   const user = useSelector((state) => state.user.user);
 
-  console.log("My User", user);
+  console.log("From Profile", user);
   if (!user) {
     return <Loader />;
   }
@@ -30,6 +29,7 @@ function Profile() {
 
   return (
     <div>
+      <Header />
       <h1>{user.name}</h1>
       <h1>{user.email}</h1>
       <h1>{user.uid}</h1>

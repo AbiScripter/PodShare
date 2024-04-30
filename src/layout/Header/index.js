@@ -7,9 +7,9 @@ const Header = () => {
     <div className="navbar">
       <div className="gradient"></div>
       <div className="links">
-        <NavLink className="navlink" to="/">
+        {/* <NavLink className="navlink" to="/">
           Signup
-        </NavLink>
+        </NavLink> */}
         <NavLink className="navlink" to="/podcasts">
           Podcasts
         </NavLink>

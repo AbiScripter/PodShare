@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SignupForm from "../components/SignupForm";
 import LoginForm from "../components/LoginForm";
+import Header from "../layout/Header";
 
 function SignUp() {
   const [flag, setFlag] = useState(false);
